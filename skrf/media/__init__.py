@@ -47,17 +47,23 @@ Transmission Line Classes
     ~cpw.CPW
     ~freespace.Freespace
     ~plasma.Plasma
+    ~debye.Debye
+    ~colecole.ColeCole
     ~coaxial.Coaxial
+    ~twowire.TwoWire
 
 
 .. _DistributedCircuit: :class:`~skrf.media.distributedCircuit.DistributedCircuit`
 
 '''
 
-from media import Media
+from coaxial import Coaxial
+from colecole import ColeCole
+from cpw import CPW
+from debye import Debye
 from distributedCircuit import DistributedCircuit
 from freespace import Freespace
-from cpw import CPW
-from rectangularWaveguide import RectangularWaveguide
-from coaxial import Coaxial
+from media import Media
 from plasma import Plasma
+from rectangularWaveguide import RectangularWaveguide
+from twowire import TwoWire
