@@ -46,6 +46,7 @@ Transmission Line Classes
     ~rectangularWaveguide.RectangularWaveguide
     ~cpw.CPW
     ~freespace.Freespace
+    ~plasma.Plasma
     ~coaxial.Coaxial
 
 
@@ -59,3 +60,4 @@ from freespace import Freespace
 from cpw import CPW
 from rectangularWaveguide import RectangularWaveguide
 from coaxial import Coaxial
+from plasma import Plasma
