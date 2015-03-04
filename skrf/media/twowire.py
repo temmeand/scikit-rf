@@ -10,12 +10,11 @@ A two-wire transmission line defined by wire dimensions and surrounding media
 from scipy.constants import epsilon_0, mu_0, pi
 from numpy import arccosh, sqrt
 from .distributedCircuit import DistributedCircuit
-from .media import to_meters
 
 
 class TwoWire(DistributedCircuit):
     '''
-    A two-wire transmission line defined by wire dimensions and surrounding media
+    A two-wire t-line defined by wire dimensions and surrounding media
 
     Calculates and returns the resistance, impedance, conductance, and
     capacitance for a two-wire transmission line. Geometric and electrical
@@ -28,7 +27,7 @@ class TwoWire(DistributedCircuit):
             :class:`~skrf.media.twowire.TwoWire`
 
     '''
-    def __init__(self, frequency, a, D, sigma_c=inf, mu_c=1, eps_r=1,
+    def __init__(self, frequency, a, D, sigma_c=float('inf'), mu_c=1, eps_r=1,
                  tanDelta=0, mu_r=1, unit='m', *args, **kwargs):
         '''
         Two wire transmission line initializer
@@ -71,8 +70,8 @@ class TwoWire(DistributedCircuit):
         '''
 
         # Scale dimensions
-        a = to_meters(a, unit)
-        D = to_meters(D, unit)
+        a = DistributedCircuit.to_meters(a, unit)
+        D = DistributedCircuit.to_meters(D, unit)
         eps_sgl = epsilon_0*eps_r
         eps_dbl = epsilon_0*eps_r*tanDelta
 
