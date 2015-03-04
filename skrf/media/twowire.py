@@ -16,12 +16,7 @@ class TwoWire(DistributedCircuit):
     '''
     A two-wire t-line defined by wire dimensions and surrounding media
 
-    Calculates and returns the resistance, impedance, conductance, and
-    capacitance for a two-wire transmission line. Geometric and electrical
-    properties are given for the wire and the media in which the wires are
-    located.
-
-    This class's inheritence is;
+    This class's inheritence is:
             :class:`~skrf.media.media.Media`->
             :class:`~skrf.media.distributedCircuit.DistributedCircuit`->
             :class:`~skrf.media.twowire.TwoWire`

@@ -17,8 +17,8 @@ class ColeCole(DistributedCircuit):
     A media with parameters governed by the Cole-Cole equation.
 
     .. math::
-        \\epsilon = \\epsilon_\\inf +
-        \\frac{\\epsilon_s - \\epsilon_\\inf}{1+(j\\omega\\tau)^{1-\\alpha}}
+        \\epsilon = \\epsilon_{\\inf} +
+        \\frac{\\epsilon_s - \\epsilon_{\\inf}}{1+(j\\omega\\tau)^{1-\\alpha}}
 
     The field properties are related to a distributed circuit transmission line
     model given in circuit theory by:
@@ -62,8 +62,8 @@ class ColeCole(DistributedCircuit):
         The Cole-Cole equation is
 
         .. math::
-            \\epsilon = \\epsilon_\\inf +
-            \\frac{\\epsilon_s - \\epsilon_\\inf}{1+(j\\omega\\tau)^{1-\\alpha}}
+            \\epsilon = \\epsilon_{\\inf} +
+            \\frac{\\epsilon_s \\epsilon_{\\inf}}{1+(j\\omega\\tau)^{1-\\alpha}}
 
         For water at 25degC :math:`\\epsilon_s=78.408`,
         :math:`\\epsilon_\\infty=5.2` :math:`\\tau=8.27` ps, and

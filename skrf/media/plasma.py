@@ -67,12 +67,12 @@ class Plasma(DistributedCircuit):
 
         .. math::
 
-            \epsilon (\omega) = \epsilon_0 \left( 1-
-            \frac{\omega_p^2}{\omega^2+\nu^2} \right)
-            -j \epsilon_0 \frac{\omega_p^2\nu}{\omega(\omega^2+\nu^2)}\\
-            \omega_p=\sqrt{\frac{n_e e^2}{\epsilon_0 m_e}}
+            \\epsilon (\\omega) = \\epsilon_0 \\left( 1-
+            \\frac{\\omega_p^2}{\\omega^2+\\nu^2} \\right)
+            -j\\epsilon_0 \\frac{\\omega_p^2\\nu}{\\omega(\\omega^2+\\nu^2)}\\\\
+            \\omega_p=\\sqrt{\\frac{n_e e^2}{\\epsilon_0 m_e}}
 
-        where :math:`\omega=2\pi f`.
+        where :math:`\\omega=2\\pi f`.
 
         The distributed circuit parameters are related to a space's
         field properties by
