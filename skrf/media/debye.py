@@ -70,9 +70,10 @@ class Debye(DistributedCircuit):
             \\epsilon^{\\prime\\prime} =
             \\frac{(\\epsilon_s-\\epsilon_\\infty)\\omega\\tau}{1+\\omega^2\\tau^2}
 
-        For water at 25degC $\\epsilon_s=78.408$, $\\epsilon_\\infty=5.2$ and
-        $\\tau=8.27$ ps. Reference: CRC Handbook of Chemistry and Physics, 95th
-        Ed., 2014-2015.
+        For water at 25degC :math:`\\epsilon_s=78.408`,
+        :math:`\\epsilon_\\infty=5.2`, and  :math:`\\tau=8.27` ps. Reference:
+        CRC Handbook of Chemistry and Physics, 95th Ed., 2014-2015 and
+        Rothwell, E. and Cloud, M., Electromagnetics, 2nd Ed., 2012.
 
         The distributed circuit parameters are related to a space's
         field properties by

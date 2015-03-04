@@ -17,8 +17,8 @@ class ColeCole(DistributedCircuit):
     A media with parameters governed by the Cole-Cole equation.
 
     .. math::
-        \epsilon = \epsilon_\inf +
-        \frac{\epsilon_s - \epsilon_\inf}{1+(j\omega\tau)^{1-\alpha}}
+        \\epsilon = \\epsilon_\\inf +
+        \\frac{\\epsilon_s - \\epsilon_\\inf}{1+(j\\omega\\tau)^{1-\\alpha}}
 
     The field properties are related to a distributed circuit transmission line
     model given in circuit theory by:
@@ -38,7 +38,8 @@ class ColeCole(DistributedCircuit):
             :class:`~skrf.media.colecole.ColeCole`
 
     '''
-    def __init__(self, frequency,  es=0, einf=0, tau=0, alpha=0, *args, **kwargs):
+    def __init__(self, frequency,  es=0, einf=0, tau=0, alpha=0, *args,
+                 **kwargs):
         '''
         Debye material initializer
 
@@ -61,13 +62,14 @@ class ColeCole(DistributedCircuit):
         The Cole-Cole equation is
 
         .. math::
-            \epsilon = \epsilon_\inf +
-            \frac{\epsilon_s - \epsilon_\inf}{1+(j\omega\tau)^{1-\alpha}}
+            \\epsilon = \\epsilon_\\inf +
+            \\frac{\\epsilon_s - \\epsilon_\\inf}{1+(j\\omega\\tau)^{1-\\alpha}}
 
-        For water at 25degC $\\epsilon_s=78.408$, $\\epsilon_\\infty=5.2$
-        $\\tau=8.27$ ps, and $\\alpha=0.02$. Reference: CRC Handbook of
-        Chemistry and Physics, 95th Ed., 2014-2015 and Rothwell, E. and
-        Cloud, M., Electromagnetics, 2nd Ed., 2012.
+        For water at 25degC :math:`\\epsilon_s=78.408`,
+        :math:`\\epsilon_\\infty=5.2` :math:`\\tau=8.27` ps, and
+        :math:`\\alpha=0.02`. Reference: CRC Handbook of Chemistry and Physics,
+        95th Ed., 2014-2015 and Rothwell, E. and Cloud, M., Electromagnetics,
+        2nd Ed., 2012.
 
         The distributed circuit parameters are related to a space's
         field properties by
