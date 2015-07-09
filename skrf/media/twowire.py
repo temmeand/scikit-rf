@@ -76,7 +76,7 @@ class TwoWire(DistributedCircuit):
         invCosh = arccosh(D/(2*a))
 
         # R = 1/(pi*a*sigma_c*delta_cond)
-        R = sqrt(omega * mu_c /
+        R = sqrt(omega * mu_c*mu_0 /
                  (2 * (pi * a)**2 * sigma_c
                   * (1-(2 * a/D)**2)))
         G = (pi*omega*eps_dbl)/invCosh
