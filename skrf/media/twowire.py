@@ -10,6 +10,7 @@ A two-wire transmission line defined by wire dimensions and surrounding media
 from scipy.constants import epsilon_0, mu_0, pi
 from numpy import arccosh, sqrt
 from .distributedCircuit import DistributedCircuit
+from ..constants import to_meters
 
 
 class TwoWire(DistributedCircuit):
@@ -65,8 +66,8 @@ class TwoWire(DistributedCircuit):
         '''
 
         # Scale dimensions
-        a = DistributedCircuit.to_meters(a, unit)
-        D = DistributedCircuit.to_meters(D, unit)
+        a = to_meters(a, unit)
+        D = to_meters(D, unit)
         eps_sgl = epsilon_0*eps_r
         eps_dbl = epsilon_0*eps_r*tanDelta
 
